@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MSc Graduate | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+nav h2 { color: #38bdf8; }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav ul li a:hover { color: #38bdf8; }
+
+/* Hero */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.hero-text { max-width: 600px; }
+
+.hero-text h1 { font-size: 3rem; }
+
+.hero-text span { color: #38bdf8; }
+
+.hero-text p {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.hero img {
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(56,189,248,0.4);
+}
+.round {
+  width: 150px;        /* Set equal width & height */
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;   /* Prevents image distortion */
+}
+
+/* Sections */
+section { padding: 100px 10%; }
+
+section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    color: #38bdf8;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background: #1e293b;
+    padding: 30px;
+    width: 200px;
+    text-align: center;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    background: #334155;
+}
+
+/* Projects */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    background: #334155;
+}
+
+.project-card h3 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.project-card a {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.project-card a:hover {
+    background: white;
+}
+
+/* Contact */
+.contact-container { text-align: center; }
+
+.contact-item {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.contact-item a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.contact-item a:hover { color: white; }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    color: gray;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero img { width: 220px; }
+}
+
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>PORTIFLO</h2>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero" id="home">
+    <div class="hero-text">
+        <h1>Hello, I'm <span>Theertha vp</span></h1>
+        <p>
+            MSc Graduate skilled in Python, SQL, and Java.
+            Passionate about building scalable applications
+            and solving real-world problems.
+        </p>
+    </div>
+   <img src="aaa.jpg" 
+     alt="Rounded Image" 
+     style="width:250px; height:250px; border-radius:60%; object-fit:cover;">
+
+
+
+</section>
+
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-container">
+        <div class="skill-card"><h3>Python</h3><p>Data Analysis, Automation, Backend</p></div>
+        <div class="skill-card"><h3>SQL</h3><p>Database Design, Queries</p></div>
+        <div class="skill-card"><h3>Java</h3><p>OOP, Application Development</p></div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+
+        <div class="project-card">
+            <h3>Student Management System</h3>
+            <p>Developed a Java-based system to manage student records, grades, and attendance using OOP principles.</p>
+            <a href="https://github.com/yourusername/project1" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Data Analysis Dashboard</h3>
+            <p>Built a Python dashboard for analyzing datasets using Pandas and Matplotlib for visualization.</p>
+            <a href="https://github.com/yourusername/project2" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Database Optimization Project</h3>
+            <p>Designed and optimized SQL queries to improve database performance and reduce execution time.</p>
+            <a href="https://github.com/yourusername/project3" target="_blank">View Project</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+        <div class="contact-item">
+            📧 Email: 
+            <a href="mailto:yourgmail@gmail.com">theerthavp@gmail.com</a>
+        </div>
+        <div class="contact-item">
+            📷 Instagram: 
+            <a href="https://instagram.com/yourusername" target="_blank">_theertha_sajith</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 MSc Graduate Portfolio | All Rights Reserved
+</footer>
+
+</body>
+</html>
